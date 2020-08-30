@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import Store from './pages/Store'
@@ -13,9 +13,12 @@ import Navigation from './components/Navigation';
 import Header from './components/Header';
 import SlideInfo from './components/SlideInfo';
 
+import LoadedAudio from '../src/audio/loaded.mp3'
+
 
 function App() {
   const title = 'gamer'
+  const audioRef = useRef()
   const routes = [
     {
       title: 'Store',
@@ -44,8 +47,27 @@ function App() {
       component: Settings
     }
   ]
+
+  function playOnloadedAudio() {
+    audioRef.current.play()
+  }
+  function pauseOnloadedAudio() {
+    audioRef.current.pause()
+  }
+
+  useEffect(() => {
+    playOnloadedAudio()
+
+    return () => {
+
+    }
+  }, [])
+
   return (
     <div className="my-6 text-white">
+      <audio id="audio" ref={audioRef}>
+        <source src={LoadedAudio} type="audio/mp3"></source>
+      </audio>
       <Helmet titleTemplate={`%s - ${title}`} />
       <Header />
       <Router>

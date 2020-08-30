@@ -1,5 +1,6 @@
 :root {
   --gutter: 20px;
+  margin: 0 6px;
 }
 
 body {
@@ -54,9 +55,12 @@ figure.card--content img{
 .card--content {
   background-color: transparent;
   min-width: 200px;
-  /* margin: 0 10px; */
   color: #34495e;
 }
+
+/* @media (min-width: 638px) {
+
+} */
 
 /* <img
 sizes="(max-width: 1400px) 100vw, 1400px"

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SlideInfo() {
   return (
-    <section className="container mx-auto">
+    <section className="lg:container sm:mx-2 lg:mx-auto md:px-10 container mx-auto">
       <div className="mt-10">
         <h1 className="lato-bold text-4xl flex items-center">
           The One Way Forward
@@ -12,14 +12,14 @@ export default function SlideInfo() {
             </svg>
           </span>
         </h1>
-        <p className="my-6 lato-regular w-1/3">
+        <p className="my-6 lato-regular sm:mx-2 sm:w-full md:1/2 lg:w-1/3">
           Nulla quis lorem ut libero malesuada feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit.
         </p>
         <div className="flex">
-          <button class="bg-yellow-400 hover:bg-transparent border border-yellow-400 hover:text-white text-black lato-light py-2 px-4">
+          <button className="bg-yellow-400 hover:bg-transparent border border-yellow-400 hover:text-white text-black lato-light py-2 px-4">
             BUY NOW
           </button>
-          <button class="ml-6 bg-transparent hover:bg-yellow-400 text-white lato-light hover:text-black py-2 px-4 border border-yellow-400 hover:border-transparent">
+          <button className="ml-6 bg-transparent hover:bg-yellow-400 text-white lato-light hover:text-black py-2 px-4 border border-yellow-400 hover:border-transparent">
             WATCH TRAILER
           </button>
         </div>
