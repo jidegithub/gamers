@@ -1,5 +1,6 @@
 import React from 'react'
 import Clock from './Clock.jsx';
+import Profile from '../images/profile.webp'
 
 export default function Header() {
   return (
@@ -7,11 +8,12 @@ export default function Header() {
       <section className="flex justify-between">
         <nav>
           <div className="flex">
-            <figure>
-              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle" width="40" height="40" viewBox="0 0 24 24" strokeWidth=".6" stroke="#bfcee2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <figure className="rounded-lg h-12 w-12 mr-2">
+              <img className="rounded-full" src={Profile} alt="profile" />
+              {/* <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle" width="40" height="40" viewBox="0 0 24 24" strokeWidth=".6" stroke="#bfcee2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" />
                 <circle cx="12" cy="12" r="9" fill="#fff" />
-              </svg>
+              </svg> */}
             </figure>
             <p className="font-bold tracking-normal">
               <span className=" flex items-center text-sm">mehedishakb0
