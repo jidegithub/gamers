@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 export default function Library() {
   return (
-    <div>
+    <div className="flex justify-center">
       <Helmet title='library' />
       library
     </div>

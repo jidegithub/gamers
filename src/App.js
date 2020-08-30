@@ -10,8 +10,8 @@ import Settings from './pages/Settings'
 import NoMatch from './pages/NoMatch'
 import NavigationLink from './components/NavigationLink';
 import Navigation from './components/Navigation';
-import './App.css';
 import Header from './components/Header';
+import SlideInfo from './components/SlideInfo';
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       path: '/',
       component: Store,
       exact: true
-    }, 
+    },
     {
       title: 'My Games',
       path: '/gamecollections',
@@ -45,9 +45,9 @@ function App() {
     }
   ]
   return (
-    <div className="App my-8">
-      <Helmet titleTemplate={`%s - ${title}`}/>
-      <Header/>
+    <div className="my-6 text-white">
+      <Helmet titleTemplate={`%s - ${title}`} />
+      <Header />
       <Router>
         <Navigation>
           {routes.map((route, i) => (
@@ -61,6 +61,7 @@ function App() {
           <Route component={NoMatch} />
         </Switch>
       </Router>
+      <SlideInfo />
     </div>
   );
 }

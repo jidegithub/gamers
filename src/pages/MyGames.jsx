@@ -1,11 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Slider from "../components/Slider"
 
 export default function MyGames() {
   return (
-    <div>
+    <div className="flex justify-center">
       <Helmet title='collections'/>
-      my games
+      <Slider />
     </div>
   )
 }

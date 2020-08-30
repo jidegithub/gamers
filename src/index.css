@@ -1,21 +1,83 @@
+:root {
+  --gutter: 20px;
+}
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  background-image: url(../src/images/rotate-hero.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-position-x: center; 
+  background-position-y: center */
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-.lato-bold{
+
+.lato-bold {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
-.lato-regular{
+
+.lato-regular {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-.lato-light{
+
+.lato-light {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  height: 10rem;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+figure.card--content img{
+  border-radius: 5px;
+}
+
+.card--content {
+  background-color: transparent;
+  min-width: 200px;
+  /* margin: 0 10px; */
+  color: #34495e;
+}
+
+/* <img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_200.jpg 200w,
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_579.jpg 579w,
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_837.jpg 837w,
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_1048.jpg 1048w,
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_1227.jpg 1227w,
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_1381.jpg 1381w,
+fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_1400.jpg 1400w"
+src="fcd4c8a5d99340bb9c9aac9bc22dcdde_wdmdvq_fi10dl_c_scale,w_1400.jpg"
+alt=""> */
+/* <picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+99e343143b594f8daa512676d5620f26_gqnged_lsf97n_c_scale,w_200.jpg 200w,
+99e343143b594f8daa512676d5620f26_gqnged_lsf97n_c_scale,w_967.jpg 967w,
+99e343143b594f8daa512676d5620f26_gqnged_lsf97n_c_scale,w_1400.jpg 1400w"
+src="99e343143b594f8daa512676d5620f26_gqnged_lsf97n_c_scale,w_1400.jpg"
+alt="">
+</picture> */
+/*# sourceMappingURL=index.css.map */
